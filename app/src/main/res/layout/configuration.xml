@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/playerNameTextView"
+        android:layout_width="494dp"
+        android:layout_height="53dp"
+        android:hint="Enter Player Name"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.469"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <TextView
+        android:id="@+id/textViewDiff"
+        android:layout_width="165dp"
+        android:layout_height="31dp"
+        android:text="Choose Difficulty"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.21"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.298" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupDifficulty"
+        android:layout_width="94dp"
+        android:layout_height="115dp"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.218"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.607">
+
+        <RadioButton
+            android:id="@+id/radioButtonDiffEasy"
+            android:layout_width="76dp"
+            android:layout_height="36dp"
+            android:text="Easy"
+            android:textColor="#000000" />
+
+        <RadioButton
+            android:id="@+id/radioButtonDiffMed"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:text="Medium"
+            android:textColor="#000000" />
+
+        <RadioButton
+            android:id="@+id/radioButtonDiffHard"
+            android:layout_width="76dp"
+            android:layout_height="38dp"
+            android:text="Hard"
+            android:textColor="#000000" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonStart"
+        android:layout_width="185dp"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:text="Start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.91" />
+
+    <TextView
+        android:id="@+id/textViewSprite"
+        android:layout_width="126dp"
+        android:layout_height="23dp"
+        android:text="Choose Sprite"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.725"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.291" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupSprite"
+        android:layout_width="83dp"
+        android:layout_height="323dp"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.68"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.646">
+
+        <RadioButton
+            android:id="@+id/radioButtonSprite1"
+            android:layout_width="wrap_content"
+            android:layout_height="105dp"
+            android:text="Sprite 1"
+            android:textColor="#000000" />
+
+        <RadioButton
+            android:id="@+id/radioButtonSprite2"
+            android:layout_width="wrap_content"
+            android:layout_height="103dp"
+            android:text="Sprite 2"
+            android:textColor="#000000" />
+
+        <RadioButton
+            android:id="@+id/radioButtonSprite3"
+            android:layout_width="wrap_content"
+            android:layout_height="106dp"
+            android:text="Sprite 3" />
+
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/Sprite1"
+        android:layout_width="94dp"
+        android:layout_height="94dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.768"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.462"
+        app:srcCompat="@drawable/playerone" />
+
+    <ImageView
+        android:id="@+id/Sprite2"
+        android:layout_width="94dp"
+        android:layout_height="94dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.768"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.604"
+        app:srcCompat="@drawable/player2" />
+
+    <ImageView
+        android:id="@+id/Sprite3"
+        android:layout_width="94dp"
+        android:layout_height="94dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.768"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.746"
+        app:srcCompat="@drawable/player3" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
